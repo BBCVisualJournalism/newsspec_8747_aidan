@@ -1,0 +1,1 @@
+This is the poorest and most deprived class group. People in this group score low for economic, social and cultural factors:

@@ -1,0 +1,1 @@
+This class group is sociable, has lots of cultural interests and is in the middle of all the class groups in terms of wealth. According to the Great British Class Survey results, lots of people in this group:

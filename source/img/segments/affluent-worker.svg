@@ -1,0 +1,324 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg style="overflow: hidden; position: relative;" height="234" version="1.1" width="234" xmlns="http://www.w3.org/2000/svg"><defs class="svg-crowbar"><style type="text/css"><![CDATA[
+.clearfix::before, .clearfix::after { content: ''; display: table; }
+.clearfix::after { clear: both; }
+.clearfix { }
+.is-hidden { display: none; }
+.visuallyhidden { border: 0px; clip: rect(0px 0px 0px 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+.sprite { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/sprite.png); background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.sprite-icon-next { width: 15px; height: 19px; background-position: -5px -5px; }
+.sprite-checkbox-checked, .desktop fieldset[data-ui="checkboxes"] label.is-checked .sprite { width: 24px; height: 24px; background-position: -30px -5px; }
+.sprite-checkbox, .desktop fieldset[data-ui="checkboxes"] label .sprite { width: 24px; height: 24px; background-position: -64px -5px; }
+.sprite-close { width: 16px; height: 16px; background-position: -98px -5px; }
+.sprite-close-reversed { width: 16px; height: 16px; background-position: -124px -5px; }
+.sprite-icon-cultural { width: 20px; height: 16px; background-position: -150px -5px; }
+.sprite-icon-economic { width: 13px; height: 19px; background-position: -180px -5px; }
+.sprite-icon-prev { width: 15px; height: 19px; background-position: -203px -5px; }
+.sprite-icon-result { width: 25px; height: 21px; background-position: -228px -5px; }
+.sprite-icon-social { width: 18px; height: 17px; background-position: -263px -5px; }
+.sprite-radio, .desktop fieldset[data-ui="radios"] label .sprite { width: 16px; height: 16px; background-position: -291px -5px; }
+.sprite-radio-checked, .desktop fieldset[data-ui="radios"] label.is-checked .sprite { width: 16px; height: 16px; background-position: -317px -5px; }
+.sprite-slider { width: 25px; height: 24px; background-position: -343px -5px; }
+.character { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/characters-outlined.png); display: block; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.character-affluent-worker { width: 125px; height: 218px; background-position: -5px -5px; }
+.character-elite { width: 125px; height: 218px; background-position: -140px -5px; }
+.character-emergent-worker { width: 125px; height: 218px; background-position: -275px -5px; }
+.character-established-middle { width: 125px; height: 218px; background-position: -410px -5px; }
+.character-precariat { width: 125px; height: 218px; background-position: -545px -5px; }
+.character-technical-middle { width: 125px; height: 218px; background-position: -680px -5px; }
+.character-traditional-worker { width: 125px; height: 218px; background-position: -815px -5px; }
+.character-user { width: 125px; height: 218px; background-position: -950px -5px; }
+.character-nav { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/characters-nav.png); background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.character-nav-affluent-worker { width: 94px; height: 68px; background-position: -5px -5px; }
+.character-nav-elite { width: 94px; height: 68px; background-position: -109px -5px; }
+.character-nav-emergent-worker { width: 94px; height: 68px; background-position: -213px -5px; }
+.character-nav-established-middle { width: 94px; height: 68px; background-position: -317px -5px; }
+.character-nav-precariat { width: 94px; height: 68px; background-position: -421px -5px; }
+.character-nav-technical-middle { width: 94px; height: 68px; background-position: -525px -5px; }
+.character-nav-traditional-worker { width: 94px; height: 68px; background-position: -629px -5px; }
+.character-nav-user { width: 94px; height: 68px; background-position: -733px -5px; }
+.characters-small { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/characters-small.png); background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.characters-small-affluent-worker { width: 49px; height: 85px; background-position: -5px -5px; }
+.characters-small-elite { width: 49px; height: 85px; background-position: -64px -5px; }
+.characters-small-emergent-worker { width: 49px; height: 85px; background-position: -123px -5px; }
+.characters-small-established-middle { width: 49px; height: 85px; background-position: -182px -5px; }
+.characters-small-precariat { width: 49px; height: 85px; background-position: -241px -5px; }
+.characters-small-technical-middle { width: 49px; height: 85px; background-position: -300px -5px; }
+.characters-small-traditional-worker { width: 49px; height: 85px; background-position: -359px -5px; }
+.character-mobile { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/characters-mobile.png); background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.character-mobile-affluent-worker { width: 89px; height: 155px; background-position: -5px -5px; }
+.character-mobile-elite { width: 89px; height: 155px; background-position: -104px -5px; }
+.character-mobile-emergent-worker { width: 89px; height: 155px; background-position: -203px -5px; }
+.character-mobile-established-middle { width: 89px; height: 155px; background-position: -302px -5px; }
+.character-mobile-precariat { width: 89px; height: 155px; background-position: -401px -5px; }
+.character-mobile-technical-middle { width: 89px; height: 155px; background-position: -500px -5px; }
+.character-mobile-traditional-worker { width: 89px; height: 155px; background-position: -599px -5px; }
+.character-mobile-user { width: 89px; height: 155px; background-position: -698px -5px; }
+.piechart { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/piecharts.png); display: block; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.piechart-14pc { width: 60px; height: 60px; background-position: -5px -5px; }
+.piechart-15pc { width: 60px; height: 60px; background-position: -75px -5px; }
+.piechart-19pc { width: 60px; height: 60px; background-position: -145px -5px; }
+.piechart-25pc { width: 60px; height: 60px; background-position: -215px -5px; }
+.piechart-6pc { width: 60px; height: 60px; background-position: -285px -5px; }
+.piechart-7pc { width: 60px; height: 60px; background-position: -355px -5px; }
+.mobile { display: none; background-color: rgb(234, 234, 228); position: absolute; left: 0px; right: 0px; top: 0px; min-height: 100%; z-index: 10; background-position: initial initial; background-repeat: initial initial; }
+.mobile svg { display: inline-block; }
+.mobile form:focus { outline: 0px; }
+.mobile .h1 { font-size: 1.71429em; font-weight: bold; line-height: 1.08333; }
+.mobile .h2 { font-size: 1.14286em; font-weight: bold; line-height: 1.125; }
+.mobile .SplashView-body { padding: 8px; }
+.mobile .SplashView-body h2, .mobile .SplashView-body p { margin-bottom: 16px; }
+.mobile .SplashView-body p { font-size: 1.14286em; }
+.mobile .SplashView-nav { position: relative; top: 8px; text-align: center; }
+.mobile .SplashView-nav a { display: inline-block; padding: 0px 10px; font-size: 1.28571em; font-weight: bold; line-height: 1.66667; background-color: rgb(101, 101, 101); color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+.mobile .SplashView-nav a:focus, .mobile .SplashView-nav a:hover { text-decoration: none; background-color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.mobile .SplashView-nav a:active { background-color: rgb(204, 102, 0); background-position: initial initial; background-repeat: initial initial; }
+.mobile .ProgressView { position: relative; padding: 0px 8px; background-color: rgb(101, 101, 101); background-position: initial initial; background-repeat: initial initial; }
+.mobile .ProgressView li { display: none; font-size: 1.14286em; font-weight: bold; line-height: 2; color: rgb(255, 255, 255); }
+.mobile .ProgressView li.is-active { display: block; }
+.mobile .ProgressView li .sprite { display: none; }
+.mobile .ProgressView button.close { position: absolute; right: 8px; top: 8px; border: 0px; text-indent: -9999px; overflow: hidden; cursor: pointer; }
+.mobile .container { position: relative; padding: 8px; margin: 0px; }
+.mobile .CharacterView { position: relative; width: 100%; margin: 5px 0px 0px; overflow: hidden; z-index: 0; text-align: center; }
+.mobile .CharacterView .canvas { display: inline-block; }
+.mobile .CharacterView .canvas-bitmap { position: relative; }
+.mobile .CharacterView .canvas-bitmap div { display: none; }
+.mobile .CharacterView .canvas-bitmap.archetype-user div { display: block; }
+.mobile .CharacterView .canvas-bitmap.archetype-elite { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/elite.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterView .canvas-bitmap.archetype-established-middle { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/established-middle.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterView .canvas-bitmap.archetype-technical-middle { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/technical-middle.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterView .canvas-bitmap.archetype-affluent-worker { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/affluent-worker.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterView .canvas-bitmap.archetype-emergent-worker { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/emergent-worker.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterView .canvas-bitmap.archetype-traditional-worker { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/traditional-worker.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterView .canvas-bitmap.archetype-precariat { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/precariat.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile .BitmapSegmentsView-segment { position: absolute; left: -1px; top: -6px; width: 100%; height: 100%; }
+.mobile #BitmapSegmentsView-segment-economic-income.pc0 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/income-0pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-assets.pc0 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/assets-0pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-mean.pc0 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/mean-0pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-count.pc0 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/count-0pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-emerging.pc0 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/emerging-0pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-high.pc0 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/high-0pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-income.pc20 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/income-20pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-assets.pc20 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/assets-20pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-mean.pc20 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/mean-20pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-count.pc20 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/count-20pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-emerging.pc20 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/emerging-20pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-high.pc20 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/high-20pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-income.pc40 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/income-40pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-assets.pc40 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/assets-40pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-mean.pc40 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/mean-40pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-count.pc40 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/count-40pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-emerging.pc40 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/emerging-40pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-high.pc40 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/high-40pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-income.pc60 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/income-60pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-assets.pc60 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/assets-60pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-mean.pc60 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/mean-60pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-count.pc60 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/count-60pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-emerging.pc60 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/emerging-60pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-high.pc60 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/high-60pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-income.pc80 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/income-80pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-assets.pc80 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/assets-80pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-mean.pc80 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/mean-80pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-count.pc80 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/count-80pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-emerging.pc80 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/emerging-80pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-high.pc80 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/high-80pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-income.pc100 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/income-100pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-economic-assets.pc100 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/economic/assets-100pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-mean.pc100 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/mean-100pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-social-count.pc100 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/social/count-100pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-emerging.pc100 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/emerging-100pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile #BitmapSegmentsView-segment-cultural-high.pc100 { background-image: url(http://localhost:8888/news/special/2013/newsspec_5093/img/segments/cultural/high-100pc.png); background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterView-character { position: absolute; left: 50%; top: 50%; width: 89px; height: 155px; margin: -39px 0px 0px -45px; }
+.mobile .QuestionsView h2.h1 { border: 0px; clip: rect(0px 0px 0px 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+.mobile .QuestionsView fieldset { margin: 0px 0px 52px; }
+.mobile .QuestionsView fieldset.last-child, .mobile .QuestionsView fieldset fieldset { margin-bottom: 0px; }
+.mobile .QuestionsView legend { margin: 0px 0px 12px; }
+.mobile .QuestionsView legend small { display: block; font-weight: normal; margin-top: 4px; }
+.mobile .QuestionsView label { float: left; clear: both; margin: 0px 0px 8px; font-size: 1.14286em; }
+.mobile .QuestionsView label input { margin: 0px 4px 0px 0px; }
+.mobile .economic-property { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); padding-top: 16px; margin-top: 8px !important; }
+.mobile .QuestionsView-nav { float: right; clear: both; margin: 18px 0px 0px; }
+.mobile .QuestionsView-nav button { position: relative; float: right; padding: 0px 38px 0px 8px; margin: 0px 0px 0px 2px; font-size: 1.92857em; font-weight: bold; line-height: 1.40741; background-color: rgb(101, 101, 101); color: rgb(255, 255, 255); text-transform: uppercase; background-position: initial initial; background-repeat: initial initial; }
+.mobile .QuestionsView-nav button:focus, .mobile .QuestionsView-nav button:hover { background-color: rgb(0, 0, 0); outline: 0px; background-position: initial initial; background-repeat: initial initial; }
+.mobile .QuestionsView-nav button:active { background-color: rgb(204, 102, 0); background-position: initial initial; background-repeat: initial initial; }
+.mobile .QuestionsView-nav button[disabled] { background-color: rgb(203, 202, 200); cursor: default; background-position: initial initial; background-repeat: initial initial; }
+.mobile .QuestionsView-nav button[disabled]:focus, .mobile .QuestionsView-nav button[disabled]:hover { background-color: rgb(203, 202, 200); background-position: initial initial; background-repeat: initial initial; }
+.mobile .QuestionsView-nav .prev { float: left; padding: 0px; min-width: 38px; overflow: hidden; text-indent: -9999px; }
+.mobile .QuestionsView-nav .sprite { position: absolute; right: 8px; top: 50%; margin: -10px 0px 0px; }
+.mobile .QuestionsView-nav .prev .sprite { right: auto; left: 50%; margin-left: -8px; }
+.mobile .ResultsView { margin: 16px 0px 0px; }
+.mobile .ResultsView:focus { outline: 0px; }
+.mobile .ResultsView h2.h1 { border: 0px; clip: rect(0px 0px 0px 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+.mobile .ResultsView button.reset { display: none; }
+.mobile .ResultsView-item { display: none; }
+.mobile .ResultsView-item:focus { outline: 0px; }
+.mobile .ResultsView-item.is-active { display: block; }
+.mobile .ResultsView-item p { margin: 0px 0px 16px; font-size: 1.14286em; font-weight: bold; }
+.mobile .ResultsView-item .h1 { display: none; }
+.mobile .ResultsView-item ul { margin: 0px 0px 16px; }
+.mobile .ResultsView-item li { list-style: square outside; margin: 0px 0px 8px 20px; font-size: 1.14286em; }
+.mobile .ResultsView-item-stats { display: none; }
+.mobile .ResultsView-user .h1 { color: rgb(247, 79, 6); }
+.mobile .ResultsView-user .h3 { display: none; }
+.mobile .ResultsView-summary { display: none; }
+.mobile .ResultsView-summary.is-active { display: block; }
+.mobile .CharacterNavView ul { display: none; }
+.mobile .CharacterNavView-nav { display: block; position: absolute; left: 8px; right: 8px; top: 150px; }
+.mobile .CharacterNavView-nav button { position: relative; min-height: 38px; min-width: 38px; overflow: hidden; text-indent: -9999px; background-color: rgb(101, 101, 101); color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterNavView-nav button:focus, .mobile .CharacterNavView-nav button:hover { background-color: rgb(0, 0, 0); outline: 0px; background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterNavView-nav button:active { background-color: rgb(204, 102, 0); background-position: initial initial; background-repeat: initial initial; }
+.mobile .CharacterNavView-nav button .sprite { position: absolute; left: 50%; top: 50%; margin: -9px 0px 0px -7px; }
+.mobile .CharacterNavView-nav button.prev .sprite { margin-left: -9px; }
+.mobile .CharacterNavView-nav button.prev { float: left; }
+.mobile .CharacterNavView-nav button.next { float: right; }
+.mobile .CapitalsView h2, .mobile .CapitalsView p { margin: 0px 0px 18px; font-size: 1.14286em; }
+.mobile .CapitalsView h3 { font-size: 1.14286em; }
+.mobile .CapitalsView-buttons { display: none; }
+.mobile .CapitalsView-popover:focus { outline: 0px; }
+.mobile .CapitalsView-popover button.close { display: none; }
+.mobile .CapitalsView-help { display: none; }
+.mobile #gbcs-CapitalsView-economic h3 { color: rgb(77, 51, 97); }
+.mobile #gbcs-CapitalsView-social h3 { color: rgb(250, 49, 93); }
+.mobile #gbcs-CapitalsView-cultural h3 { color: rgb(27, 180, 199); }
+.mobile .ResultsHeaderView-intro { margin-bottom: 4px; }
+.mobile .ResultsHeaderView-title { margin-bottom: 16px; font-size: 1.71429em; font-weight: bold; line-height: 1; color: rgb(31, 116, 163); }
+.mobile .ResultsHeaderView-title-user { color: rgb(247, 79, 6); }
+.desktop { position: relative; min-height: 558px; background-color: rgb(234, 234, 228); background-position: initial initial; background-repeat: initial initial; }
+.desktop #share_class_result { float: left; }
+.desktop #share_class_result .bbc-st-full { background-color: rgb(234, 234, 228); padding: 0px; }
+.desktop svg { display: block; }
+.desktop form { margin: 0px; padding: 0px; overflow: visible; border-top-width: 0px; }
+.desktop form:focus { outline: 0px; }
+.desktop form fieldset { float: none; overflow: visible; }
+.desktop .h1 { font-size: 2.46154em; line-height: 1.0625; }
+.desktop .h2 { font-size: 1.38462em; font-weight: bold; line-height: 1; }
+.desktop .SplashView { position: absolute; left: 0px; right: 0px; top: 0px; z-index: 10; }
+.desktop .SplashView-body { position: absolute; right: 20px; top: 120px; width: 468px; }
+.desktop .SplashView-body p { font-size: 1.23077em; line-height: 1; }
+.desktop .SplashView-body a { display: inline-block; padding: 0px 8px; font-size: 2.07692em; font-weight: bold; line-height: 1.40741; background-color: rgb(101, 101, 101); color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+.desktop .SplashView-body a:focus, .desktop .SplashView-body a:hover { text-decoration: none; background-color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.desktop .SplashView-body a:active { background-color: rgb(204, 102, 0); background-position: initial initial; background-repeat: initial initial; }
+.desktop .SplashView-characters { position: absolute; left: 0px; top: 260px; margin: 0px 0px 0px -19px; }
+.desktop .SplashView-characters i { float: left; margin: 0px 0px 0px 19px; }
+.desktop .ProgressView { position: relative; margin: 0px 0px 22px; z-index: 0; }
+.desktop .ProgressView.is-hidden { display: block; visibility: hidden; }
+.desktop .ProgressView ol { overflow: hidden; list-style: none; margin: 0px; padding: 0px; background-color: rgb(238, 238, 238); background-position: initial initial; background-repeat: initial initial; }
+.desktop .ProgressView li { position: relative; float: left; width: 242px; margin: 0px; border-right-width: 2px; border-right-style: solid; border-right-color: rgb(234, 234, 228); font-size: 1.38462em; font-weight: bold; background-color: rgb(204, 204, 204); background-position: initial initial; background-repeat: initial initial; }
+.desktop .ProgressView li.last-child { width: 244px; border-right-width: 0px; }
+.desktop .ProgressView li::before, .desktop .ProgressView li::after { content: ''; position: absolute; top: 50%; height: 0px; width: 0px; margin: -40px 0px 0px; border-top-width: 40px; border-top-style: solid; border-top-color: transparent; border-bottom-width: 40px; border-bottom-style: solid; border-bottom-color: transparent; border-left-width: 40px; border-left-style: solid; border-left-color: transparent; }
+.desktop .ProgressView li::before { right: -24px; border-left-color: rgb(234, 234, 228); z-index: 1; }
+.desktop .ProgressView li::after { right: -21px; border-left-color: rgb(204, 204, 204); z-index: 2; }
+.desktop .ProgressView li.last-child::before, .desktop .ProgressView li.last-child::after { display: none; }
+.desktop .ProgressView span { position: relative; display: block; line-height: 2.44444; text-align: center; color: rgb(255, 255, 255); z-index: 3; }
+.desktop .ProgressView i { position: relative; top: -1px; display: inline-block; margin: 0px 0px 0px 10px; vertical-align: middle; }
+.desktop .ProgressView-economic { z-index: 4; }
+.desktop .ProgressView-economic.is-active { background-color: rgb(77, 51, 97); background-position: initial initial; background-repeat: initial initial; }
+.desktop .ProgressView-economic.is-active::after { border-left-color: rgb(77, 51, 97); }
+.desktop .ProgressView-social { z-index: 3; }
+.desktop .ProgressView-social.is-active { background-color: rgb(250, 49, 93); background-position: initial initial; background-repeat: initial initial; }
+.desktop .ProgressView-social.is-active::after { border-left-color: rgb(250, 49, 93); }
+.desktop .ProgressView-cultural { z-index: 2; }
+.desktop .ProgressView-cultural.is-active { background-color: rgb(27, 180, 199); background-position: initial initial; background-repeat: initial initial; }
+.desktop .ProgressView-cultural.is-active::after { border-left-color: rgb(27, 180, 199); }
+.desktop .ProgressView-result { z-index: 1; }
+.desktop .ProgressView-result.is-active { background-color: rgb(247, 79, 6); background-position: initial initial; background-repeat: initial initial; }
+.desktop .ProgressView-result.is-active::after { border-left-color: rgb(247, 79, 6); }
+.desktop .container { position: relative; }
+.desktop .CharacterView { position: relative; float: left; width: 468px; margin: 5px 0px 0px; z-index: 0; }
+.desktop .CharacterView .canvas { width: 468px; height: 468px; }
+.desktop .CharacterView-character { position: absolute; left: 50%; top: 50%; width: 125px; height: 218px; margin: -55px 0px 0px -63px; }
+.desktop .CapitalsView { position: absolute; left: 0px; top: 25px; width: 468px; z-index: 1; }
+.desktop .CapitalsView h2 { border: 0px; clip: rect(0px 0px 0px 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+.desktop .CapitalsView-help { position: absolute; left: 0px; top: 388px; width: 100%; font-size: 1em; text-align: center; color: rgb(80, 80, 80); }
+.desktop .CapitalsView-button { position: absolute; left: 0px; top: 0px; padding: 0px; margin: -16px 0px 0px -16px; background-color: transparent; background-position: initial initial; background-repeat: initial initial; }
+.desktop .CapitalsView-button a { display: block; width: 33px; height: 33px; text-indent: -9999px; overflow: hidden; background-color: rgb(0, 0, 0); border-top-left-radius: 9999px; border-top-right-radius: 9999px; border-bottom-right-radius: 9999px; border-bottom-left-radius: 9999px; background-position: initial initial; background-repeat: initial initial; }
+.desktop .CapitalsView-button a:focus, .desktop .CapitalsView-button a:hover { background-color: rgb(101, 101, 101); background-position: initial initial; background-repeat: initial initial; }
+.desktop .CapitalsView-button i { position: absolute; left: 17px; top: 17px; }
+.desktop .CapitalsView-button i.sprite-icon-economic { margin: -10px 0px 0px -7px; }
+.desktop .CapitalsView-button i.sprite-icon-social { margin: -10px 0px 0px -9px; }
+.desktop .CapitalsView-button i.sprite-icon-cultural { margin: -8px 0px 0px -10px; }
+.desktop .CapitalsView-button-economic { left: 25px; top: 170px; }
+.desktop .CapitalsView-button-social { left: 50%; top: 0px; }
+.desktop .CapitalsView-button-cultural { left: auto; right: 9px; top: 170px; }
+.desktop .CapitalsView-popover { display: none; position: absolute; left: 0px; top: 0px; width: 260px; padding: 7px 28px 7px 8px; margin: 0px 0px 0px 40px; border: 2px solid rgb(80, 80, 80); background-color: rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 2px; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 2px; background-position: initial initial; background-repeat: initial initial; }
+.desktop .CapitalsView-popover.is-active { display: block; }
+.desktop .CapitalsView-popover:focus { outline: 0px; }
+.desktop .CapitalsView-popover::before, .desktop .CapitalsView-popover::after { content: ''; position: absolute; left: 0px; top: 50%; height: 0px; width: 0px; margin: -16px 0px 0px -16px; border-top-width: 16px; border-top-style: solid; border-top-color: transparent; border-bottom-width: 16px; border-bottom-style: solid; border-bottom-color: transparent; border-right-width: 16px; border-right-style: solid; border-right-color: transparent; }
+.desktop .CapitalsView-popover::before { border-right-color: rgb(80, 80, 80); }
+.desktop .CapitalsView-popover::after { border-right-color: rgb(255, 255, 255); margin-left: -13px; }
+.desktop .CapitalsView-popover h3, .desktop .CapitalsView-popover p { margin: 0px; font-size: 0.92857em; line-height: 1.38462; color: rgb(80, 80, 80); }
+.desktop .CapitalsView-popover button.close { position: absolute; right: 8px; top: 8px; border: 0px; text-indent: -9999px; overflow: hidden; cursor: pointer; }
+.desktop #gbcs-CapitalsView-economic { left: 25px; top: 107px; }
+.desktop #gbcs-CapitalsView-social { left: 50%; top: -81px; }
+.desktop #gbcs-CapitalsView-cultural { left: 441px; top: 89px; }
+.desktop .QuestionsView { float: right; width: 468px; margin-right: 20px; margin-top: 6px; }
+.desktop .QuestionsView form { min-height: 427px; padding-bottom: 58px; }
+.desktop .QuestionsView fieldset { display: block; margin: 0px 0px 52px; }
+.desktop .QuestionsView fieldset.last-child, .desktop .QuestionsView fieldset fieldset { margin-bottom: 0px; }
+.desktop .QuestionsView h2 { position: absolute; left: 24px; top: -6px; line-height: 1; color: rgb(247, 79, 6); }
+.desktop .QuestionsView legend { padding: 0px 0px 12px; margin: 0px; }
+.desktop .QuestionsView legend small { display: block; font-weight: normal; font-size: 0.72222em; line-height: 1.38462; }
+.desktop .QuestionsView label { float: none; display: block; width: auto; font-size: 1.23077em; font-weight: bold; }
+.desktop .QuestionsView-column { float: left; width: 226px; padding: 0px 8px 0px 0px; }
+.desktop fieldset[data-ui="checkboxes"] label { position: relative; padding: 0px 0px 0px 34px; margin: 0px 0px 14px; line-height: 1.5; cursor: pointer; }
+.desktop fieldset[data-ui="checkboxes"] label .sprite { position: absolute; left: 0px; top: 0px; }
+.desktop fieldset[data-ui="checkboxes"] label.is-focused { background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+.desktop fieldset[data-ui="checkboxes"] input { border: 0px; clip: rect(0px 0px 0px 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+.desktop fieldset[data-ui="radios"] { overflow: hidden; }
+.desktop fieldset[data-ui="radios"] label { float: left; clear: none; padding: 0px 0px 0px 22px; margin: 0px 0px 0px 10px; font-weight: normal; font-size: 1em; cursor: pointer; }
+.desktop fieldset[data-ui="radios"] label.first-child { margin-left: 0px; }
+.desktop fieldset[data-ui="radios"] label .sprite { position: absolute; left: 0px; top: 0px; }
+.desktop fieldset[data-ui="radios"] label.is-focused { background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+.desktop fieldset[data-ui="radios"].is-disabled label { cursor: default; opacity: 0.3; }
+.desktop fieldset[data-ui="radios"].is-disabled label input { }
+.desktop fieldset[data-ui="radios"] input { border: 0px; clip: rect(0px 0px 0px 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+.desktop .economic-property { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); padding-top: 8px; margin-top: 8px !important; }
+.desktop .QuestionsView-nav { position: absolute; right: -20px; bottom: 20px; }
+.desktop .QuestionsView-nav button { position: relative; float: right; padding: 0px 38px 0px 8px; margin: 0px 0px 0px 2px; font-size: 2.07692em; font-weight: bold; line-height: 1.40741; background-color: rgb(101, 101, 101); color: rgb(255, 255, 255); text-transform: uppercase; background-position: initial initial; background-repeat: initial initial; }
+.desktop .QuestionsView-nav button:focus, .desktop .QuestionsView-nav button:hover { background-color: rgb(0, 0, 0); outline: 0px; background-position: initial initial; background-repeat: initial initial; }
+.desktop .QuestionsView-nav button:active { background-color: rgb(204, 102, 0); background-position: initial initial; background-repeat: initial initial; }
+.desktop .QuestionsView-nav button[disabled] { background-color: rgb(203, 202, 200); cursor: default; background-position: initial initial; background-repeat: initial initial; }
+.desktop .QuestionsView-nav button[disabled]:focus, .desktop .QuestionsView-nav button[disabled]:hover { background-color: rgb(203, 202, 200); background-position: initial initial; background-repeat: initial initial; }
+.desktop .QuestionsView-nav .prev { float: left; padding: 0px; min-width: 38px; overflow: hidden; text-indent: -9999px; }
+.desktop .QuestionsView-nav .sprite { position: absolute; right: 8px; top: 50%; margin: -10px 0px 0px; }
+.desktop .QuestionsView-nav .prev .sprite { right: auto; left: 50%; margin-left: -8px; }
+.desktop .ResultsView { float: right; width: 468px; margin-right: 20px; margin-top: 8px; }
+.desktop .ResultsView:focus { outline: 0px; }
+.desktop .ResultsView h2.h2 { position: absolute; left: 0px; top: 0px; }
+.desktop .ResultsView-item { display: none; font-size: 1em; }
+.desktop .ResultsView-item:focus { outline: 0px; }
+.desktop .ResultsView-item.is-active { display: block; }
+.desktop .ResultsView-item p { font-size: 1.23077em; font-weight: bold; }
+.desktop .ResultsView-item .h1 { margin-bottom: 18px; font-size: 2.46154em; font-weight: bold; line-height: 1; color: rgb(31, 116, 163); }
+.desktop .ResultsView-item li { font-size: 1.07692em; }
+.desktop .ResultsView-item-stats { overflow: hidden; margin: 0px 0px 18px; }
+.desktop .ResultsView-item-stats p { float: left; clear: none; margin: 0px 52px 0px 0px; }
+.desktop .ResultsView-item-stats span { display: block; }
+.desktop .ResultsView-item-stats-title { font-size: 0.8125em; font-weight: normal; margin: 0px 0px 4px; }
+.desktop .ResultsView-item-stats-value { font-size: 3.75em; line-height: 1; color: rgb(31, 116, 163); }
+.desktop .ResultsView-item-stats-value i { display: inline-block; vertical-align: middle; }
+.desktop .ResultsView-user h2.h1 { position: absolute; left: 24px; top: -6px; }
+.desktop .ResultsView-user .h1 { color: rgb(247, 79, 6); }
+.desktop .ResultsView-user .h3 { font-size: 1.23077em; font-weight: normal; }
+.desktop .ResultsView-user .h3 em { font-style: normal; font-weight: bold; }
+.desktop .ResultsView-summary { display: none; }
+.desktop .ResultsView-summary.is-active { display: block; }
+.desktop .ResetOption { position: absolute; right: 0px; bottom: 129px; }
+.desktop .ResetOption button { position: relative; float: right; padding: 0px 8px; margin: 0px 0px 0px 2px; font-size: 2.07692em; font-weight: bold; line-height: 1.40741; background-color: rgb(101, 101, 101); color: rgb(255, 255, 255); border: none; background-position: initial initial; background-repeat: initial initial; }
+.desktop .ResetOption button:focus, .desktop .ResetOption button:hover { background-color: rgb(0, 0, 0); outline: 0px; background-position: initial initial; background-repeat: initial initial; }
+.desktop .ResetOption button:active { background-color: rgb(204, 102, 0); background-position: initial initial; background-repeat: initial initial; }
+.desktop .ResetOption button[disabled] { background-color: rgb(203, 202, 200); cursor: default; background-position: initial initial; background-repeat: initial initial; }
+.desktop .ResetOption button[disabled]:focus, .desktop .ResetOption button[disabled]:hover { background-color: rgb(203, 202, 200); background-position: initial initial; background-repeat: initial initial; }
+.desktop .CharacterNavView { position: relative; clear: both; float: left; width: 100%; margin: -30px 0px 0px; z-index: 1; }
+.desktop .CharacterNavView ul { list-style: none; overflow: hidden; margin: 0px; }
+.desktop .CharacterNavView li { float: left; width: 119.75px; padding: 0px; margin: 0px 0px 0px -2px; border: 2px solid rgb(234, 234, 228); background-color: transparent; background-position: initial initial; background-repeat: initial initial; }
+.desktop .CharacterNavView li:first-child { margin-left: 0px; }
+.desktop .CharacterNavView li.is-active { position: relative; border-color: rgb(204, 102, 0); z-index: 1; }
+.desktop .CharacterNavView a { position: relative; display: block; padding: 76px 0px 0px; background-color: rgb(221, 221, 221); }
+.desktop .CharacterNavView a:focus, .desktop .CharacterNavView a:hover { text-decoration: none; }
+.desktop .CharacterNavView i { position: absolute; left: 50%; top: 4px; margin: 0px 0px 0px -47px; }
+.desktop .CharacterNavView span { display: block; min-height: 3em; padding: 4px 8px; font-weight: normal; line-height: 1.14286; text-align: center; background-color: rgb(101, 101, 101); color: rgb(255, 255, 255); }
+.desktop .CharacterNavView a:focus span, .desktop .CharacterNavView a:hover span { background-color: rgb(0, 0, 0); }
+.desktop .CharacterNavView a:active span { background-color: rgb(204, 102, 0); background-position: initial initial; background-repeat: initial initial; }
+.desktop .CharacterNavView-nav { display: none; }
+.ie7 .CapitalsView-popover, .ie8 .CapitalsView-popover { margin-left: 24px; }
+.ie7 .CapitalsView-popover::before, .ie7 .CapitalsView-popover::after, .ie8 .CapitalsView-popover::before, .ie8 .CapitalsView-popover::after { display: none; }]]></style></defs><defs class="svg-crowbar"><style type="text/css"></style></defs><defs class="svg-crowbar"><style type="text/css"></style></defs><defs class="svg-crowbar"><style type="text/css"></style></defs><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with RaphaÃ«l 2.0.1</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#ffffff" stroke="#eaeae4" d="M210.82298699703512,164.80519962257426L158.28211427869547,138.0342878339327A46.332,46.332,0,0,0,162.31953463719867,107.36703554103156L219.99894235726973,95.10689895688989A105.3,105.3,0,0,1,210.82298699703512,164.80519962257426"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#1bb4c7" stroke="#eaeae4" d="M179.74850463727304,148.9719600304098L158.28211427869547,138.0342878339327A46.332,46.332,0,0,0,162.31953463719867,107.36703554103156L185.88535335528803,102.35796614137541A70.4242931267329,70.4242931267329,0,0,1,179.74850463727304,148.9719600304098"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#ffffff" stroke="#eaeae4" d="M219.99894235726973,95.10689895688989L162.31953463719867,107.36703554103156A46.332,46.332,0,0,0,146.15767235812106,80.99327331377563L183.2674371775479,35.16653025858098A105.3,105.3,0,0,1,219.99894235726973,95.10689895688989"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#1bb4c7" stroke="#eaeae4" d="M214.92716980012437,96.18493749320908L162.31953463719867,107.36703554103156A46.332,46.332,0,0,0,146.15767235812106,80.99327331377563L180.00436125057726,39.19609344235498A100.11492102690788,100.11492102690788,0,0,1,214.92716980012437,96.18493749320908"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#ffffff" stroke="#eaeae4" d="M183.2674371775479,35.16653025858098L146.15767235812106,80.99327331377563A46.332,46.332,0,0,0,116.99999999999999,70.668L116.99999999999999,11.700000000000003A105.3,105.3,0,0,1,183.2674371775479,35.16653025858098"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#fa315d" stroke="#eaeae4" d="M178.824315803589,40.65332820942294L146.15767235812106,80.99327331377563A46.332,46.332,0,0,0,116.99999999999999,70.668L116.99999999999999,18.76018974936892A98.23981025063108,98.23981025063108,0,0,1,178.824315803589,40.65332820942294"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#ffffff" stroke="#eaeae4" d="M116.99999999999999,11.700000000000003L116.99999999999999,70.668A46.332,46.332,0,0,0,87.84232764187894,80.9932733137756L50.73256282245215,35.16653025858095A105.3,105.3,0,0,1,116.99999999999999,11.700000000000003"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#fa315d" stroke="#eaeae4" d="M116.99999999999999,35.03763580881771L116.99999999999999,70.668A46.332,46.332,0,0,0,87.84232764187894,80.9932733137756L65.41941291583599,53.30327967735722A81.96236419118229,81.96236419118229,0,0,1,116.99999999999999,35.03763580881771"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#ffffff" stroke="#eaeae4" d="M50.73256282245215,35.16653025858095L87.84232764187894,80.9932733137756A46.332,46.332,0,0,0,71.68046536280131,107.36703554103158L14.00105764273026,95.10689895688998A105.3,105.3,0,0,1,50.73256282245215,35.16653025858095"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#4d3361" stroke="#eaeae4" d="M80.39607853683253,71.79792146710211L87.84232764187894,80.9932733137756A46.332,46.332,0,0,0,71.68046536280131,107.36703554103158L60.106820522822495,104.9069813878557A58.164206950460525,58.164206950460525,0,0,1,80.39607853683253,71.79792146710211"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#ffffff" stroke="#eaeae4" d="M14.00105764273026,95.10689895688998L71.68046536280131,107.36703554103158A46.332,46.332,0,0,0,75.71788572130454,138.0342878339327L23.17701300296487,164.8051996225743A105.3,105.3,0,0,1,14.00105764273026,95.10689895688998"></path><path style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" fill="#4d3361" stroke="#eaeae4" d="M47.06595465334699,102.13505977744005L71.68046536280131,107.36703554103158A46.332,46.332,0,0,0,75.71788572130454,138.0342878339327L53.29622909670605,149.45869250399096A71.49641352101517,71.49641352101517,0,0,1,47.06595465334699,102.13505977744005"></path></svg>

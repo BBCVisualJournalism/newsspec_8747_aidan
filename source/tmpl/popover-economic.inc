@@ -1,0 +1,1 @@
+The purple wedges show your economic ‘capital’ score. The first wedge represents your income and the second wedge shows the combination of your savings and house value.

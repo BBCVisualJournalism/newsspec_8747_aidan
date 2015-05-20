@@ -1,0 +1,1 @@
+Which of these cultural activities do you take part in<small>Select all of the activities you do sometimes or often</small>

@@ -1,0 +1,567 @@
+.mobile {
+    display: none;
+    background: $colour-bg;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-height: 100%;
+    z-index: 10;
+
+    #gbcs-NoJs{
+        display:none;
+    }
+
+    svg {
+        display: inline-block;
+        // display: block;
+    }
+
+    form {
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .h1 {
+        font-size: font-size(24, 14);
+        font-weight: bold;
+        line-height: (26 / 24);
+    }
+
+    .h2 {
+        font-size: font-size(16, 14);
+        font-weight: bold;
+        line-height: (18 / 16);
+        letter-spacing: normal;
+        text-rendering: auto;
+    }
+
+    .SplashView-body {
+        padding: 8px;
+
+        h2,
+        p {
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: font-size(16, 14);
+        }
+    }
+
+    .SplashView-nav {
+        position: relative;
+        top: 8px;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            padding: 0 10px;
+            font-size: font-size(18, 14);
+            font-weight: bold;
+            line-height: (30 / 18);
+            background: $colour-ui-default;
+            color: #ffffff;
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                background: $colour-ui-hover;
+            }
+
+            &:active {
+                background: $colour-ui-active;
+            }
+        }
+    }
+
+    .ProgressView {
+        position: relative;
+        padding: 0 8px;
+        background: $colour-ui-default;
+
+        li {
+            display: none;
+            font-size: font-size(16, 14);
+            font-weight: bold;
+            line-height: (16 + 16) / 16;
+            color: #ffffff;
+
+            &.is-active {
+                display: block;
+            }
+
+            .sprite {
+                display: none;
+            }
+        }
+
+        button.close {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            border: 0;
+            text-indent: -9999px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+    }
+
+    .container {
+        position: relative;
+        padding: 8px;
+        margin: 0;
+    }
+
+    .CharacterView {
+        position: relative;
+        width: 100%;
+        margin: 5px 0 0 0;
+        overflow: hidden;
+        z-index: 0;
+        text-align: center;
+
+        .canvas {
+            display: inline-block;
+            // width: 100%;
+        }
+
+        .canvas-bitmap {
+            position: relative;
+
+            div {
+                display: none;
+            }
+        }
+    }
+
+    .CharacterView .canvas-bitmap.archetype-user {
+        background: url('../img/segments/user.png');
+
+        div {
+            display: block;
+        }
+    }
+
+    .CharacterView .canvas-bitmap.archetype-elite {
+        background: url('../img/segments/elite.png');
+    }
+
+    .CharacterView .canvas-bitmap.archetype-established-middle {
+        background: url('../img/segments/established-middle.png');
+    }
+
+    .CharacterView .canvas-bitmap.archetype-technical-middle {
+        background: url('../img/segments/technical-middle.png');
+    }
+
+    .CharacterView .canvas-bitmap.archetype-affluent-worker {
+        background: url('../img/segments/affluent-worker.png');
+    }
+
+    .CharacterView .canvas-bitmap.archetype-emergent-worker {
+        background: url('../img/segments/emergent-worker.png');
+    }
+
+    .CharacterView .canvas-bitmap.archetype-traditional-worker {
+        background: url('../img/segments/traditional-worker.png');
+    }
+
+    .CharacterView .canvas-bitmap.archetype-precariat {
+        background: url('../img/segments/precariat.png');
+    }
+
+    .BitmapSegmentsView-segment {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    // Generate classes for image only mobile version
+    @for $i from 0 through 5 {
+        #BitmapSegmentsView-segment-economic-income.pc#{round($i * 20)} {
+            background: url('../img/segments/economic/income-#{round($i * 20)}pc.png');
+        }
+
+        #BitmapSegmentsView-segment-economic-assets.pc#{round($i * 20)} {
+            background: url('../img/segments/economic/assets-#{round($i * 20)}pc.png');
+        }
+
+        #BitmapSegmentsView-segment-social-mean.pc#{round($i * 20)} {
+            background: url('../img/segments/social/mean-#{round($i * 20)}pc.png');
+        }
+
+        #BitmapSegmentsView-segment-social-count.pc#{round($i * 20)} {
+            background: url('../img/segments/social/count-#{round($i * 20)}pc.png');
+        }
+
+        #BitmapSegmentsView-segment-cultural-emerging.pc#{round($i * 20)} {
+            background: url('../img/segments/cultural/emerging-#{round($i * 20)}pc.png');
+        }
+
+        #BitmapSegmentsView-segment-cultural-high.pc#{round($i * 20)} {
+            background: url('../img/segments/cultural/high-#{round($i * 20)}pc.png');
+        }
+    }
+
+    .CharacterView-character {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 89px;
+        height: 155px;
+        margin: round(155px / -4) 0 0 round(89px / -2);
+    }
+
+    .QuestionsView {
+        h2.h1 {
+            @include visuallyhidden;
+        }
+
+        fieldset {
+            margin: 0 0 52px 0;
+
+            &.last-child,
+            fieldset {
+                margin-bottom: 0;
+            }
+        }
+
+        legend {
+            // Use padding as margin collapses in Safari 
+            padding: 0 0 12px 0;
+            // margin: 0 0 12px 0;
+
+            small {
+                display: block;
+                font-weight: normal;
+                // font-size: font-size(14, 16);
+                // line-height: (18 / 14);
+                margin-top: 4px;
+            }
+        }
+
+        label {
+            float: left;
+            clear: both;
+            margin: 0 0 8px 0;
+            font-size: font-size(16, 14);
+
+            input {
+                margin: 0 4px 0 0;
+            }
+        }
+    }
+
+    // FIXME: Use an ID instead?
+    .economic-property {
+        border-top: 1px solid #cccccc;
+        padding-top: 16px;
+        margin-top: 8px !important;
+    }
+
+    .QuestionsView-nav {
+        float: right;
+        clear: both;
+        margin: 18px 0 0 0;
+
+        button {
+            position: relative;
+            float: right;
+            padding: 0 (30px + 8px) 0 8px;
+            margin: 0 0 0 2px;
+            font-size: font-size(27, 14);
+            font-weight: bold;
+            line-height: (38 / 27);
+            background: $colour-ui-default;
+            color: #ffffff;
+            text-transform: uppercase;
+
+            &:focus,
+            &:hover {
+                background: $colour-ui-hover;
+                outline: 0;
+            }
+
+            &:active {
+                background: $colour-ui-active;
+            }
+
+            &[disabled] {
+                background: $colour-ui-disabled;
+                cursor: default;
+
+                &:focus,
+                &:hover {
+                    background: $colour-ui-disabled;
+                }
+            }
+        }
+
+        .prev {
+            float: left;
+            padding: 0;
+            min-width: 38px;
+            overflow: hidden;
+            text-indent: -9999px;
+        }
+
+        .sprite {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            margin: -10px 0 0 0;
+        }
+
+        .prev .sprite {
+            right: auto;
+            left: 50%;
+            margin-left: -8px;
+        }
+    }
+
+    .ResultsView {
+        margin: 16px 0 0 0;
+
+        &:focus {
+            outline: 0;
+        }
+
+        h2.h1 {
+            @include visuallyhidden;
+        }
+
+        button.reset {
+            display: none;
+        }
+    }
+
+    .ResultsView-item {
+        display: none;
+
+        &:focus {
+            outline: 0;
+        }
+
+        // FIXME: Be consistent use 'is-hidden' instead?
+        &.is-active {
+            display: block;
+        }
+
+        p {
+            margin: 0 0 16px 0;
+            font-size: font-size(16, 14);
+            font-weight: bold;
+        }
+
+        .h1 {
+            // margin-bottom: 16px;
+            // font-size: font-size(24, 14);
+            // font-weight: bold;
+            // line-height: 1;
+            // color: $colour-archetype;
+            display: none;
+        }
+
+        ul {
+            margin: 0 0 16px 0;
+        }
+
+        li {
+            list-style: square outside;
+            margin: 0 0 8px 20px;
+            font-size: font-size(16, 14);
+        }
+    }
+
+    .ResultsView-item-stats {
+        display: none;
+    }
+
+    .ResultsView-user {
+        .h1 {
+            color: $colour-key-result;
+        }
+
+        .h3 {
+            // margin-bottom: 16px;
+            // font-size: font-size(16, 14);
+            // font-weight: normal;
+            display: none;
+
+            // em {
+            //     font-style: normal;
+            //     font-weight: bold;
+            // }
+        }
+    }
+
+    .ResultsView-summary {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+    }
+
+    .CharacterNavView {
+        ul {
+            display: none;
+        }
+    }
+
+    .CharacterNavView-nav {
+        display: block;
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: 150px;
+
+        button {
+            position: relative;
+            min-height: 38px;
+            min-width: 38px;
+            overflow: hidden;
+            text-indent: -9999px;
+            background: $colour-ui-default;
+            color: #ffffff;
+
+            &:focus,
+            &:hover {
+                background: $colour-ui-hover;
+                outline: 0;
+            }
+
+            &:active {
+                background: $colour-ui-active;
+            }
+
+            .sprite {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -9px 0 0 -7px;
+            }
+
+            &.prev .sprite {
+                margin-left: -9px;   
+            }
+        }
+
+        button.prev {
+            float: left;
+
+        }
+
+        button.next {
+            float: right;
+        }
+    }
+
+    .CapitalsView {
+        h2,
+        p {
+            margin: 0 0 18px 0;
+            font-size: font-size(16, 14);
+        }
+
+        h3 {
+            font-size: font-size(16, 14);
+        }
+    }
+
+    .CapitalsView-buttons {
+        display: none;
+    }
+
+    .CapitalsView-popover {
+        &:focus {
+            outline: 0;
+        }
+
+        button.close {
+            display: none;
+        }
+    }
+
+    .CapitalsView-help {
+        display: none;
+    }
+
+    #gbcs-CapitalsView-economic h3 {
+        color: $colour-key-economic;
+    }
+
+    #gbcs-CapitalsView-social h3 {
+        color: $colour-key-social;
+    }
+
+    #gbcs-CapitalsView-cultural h3 {
+        color: $colour-key-cultural;
+    }
+
+    .ResultsHeaderView {
+
+    }
+
+    .ResultsHeaderView-intro {
+        margin-bottom: 4px;
+    }
+
+    .ResultsHeaderView-title {
+        margin-bottom: 16px;
+        font-size: font-size(24, 14);
+        font-weight: bold;
+        line-height: 1;
+        color: $colour-archetype;
+    }
+
+    .ResultsHeaderView-title-user {
+        color: $colour-key-result;
+    }
+}
+
+// Mobile launch element
+// - Styles (mostly) copied from BBC fuel calculator
+// - http://m.bbc.co.uk/news/business-21238363
+#newsspec_5093-mobile-launch {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 8px 0;
+    }
+
+    a {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin: round(34px / -2) 0 0 0;
+        color: #ffffff;
+        cursor: pointer;
+
+        span {
+            display: block;
+            padding: 8px 8px 8px 8px;
+            margin: 0 0 0 (34px + 8px + 8px + 1px);
+            line-height: 34px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 34px;
+            height: 34px;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.7) url('../img/launch-icon.png') no-repeat 8px 8px;
+        }
+    }
+}
+

@@ -1,0 +1,1 @@
+This is the wealthiest and most privileged group in the UK:

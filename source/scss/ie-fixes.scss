@@ -1,0 +1,41 @@
+.ie7,
+.ie8 {
+    // IE7 doesn't support before/after content
+    // IE8 will clip before/after content when a filter is applied
+    .CapitalsView-popover {
+        margin-left: (16px + 8px);
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.ie7 {
+
+}
+
+// IE6
+.ie {
+    .desktop {
+        height: $page-full-height;
+    }
+
+    .SplashView {
+        width: 100%;
+    }
+
+    .ProgressView ol {
+        zoom: 1;
+    }
+
+    .container {
+        zoom: 1;
+    }
+
+    div.is-hidden,
+    form.is-hidden {
+        display: none;
+    }
+}

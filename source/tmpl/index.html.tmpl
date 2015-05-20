@@ -1,0 +1,52 @@
+<%= include('includes/top.tmpl') %>
+
+    <div class="main story-body">
+		<div id="newsspec_5093" class="clearfix no-js">
+
+		    <p id="gbcs-NoJs">In order to see this dynamic content you need to have <a href="http://www.bbc.co.uk/webwise/askbruce/articles/browse/java_1.shtml" title="BBC Webwise article about enabling javascript">Javascript</a> enabled. Visit <a href="http://www.bbc.co.uk/webwise/">BBC Webwise</a> for full instructions.
+		    </p>
+
+		    <%= include('progressview.inc') %>    
+
+		    <%= include('splashview.inc') %>
+
+		    <div class="container clearfix">
+
+		        <div id="gbcs-CharacterView" class="CharacterView">
+		            <div class="canvas"></div>
+		            <div class="CharacterView-character character character-user"></div>
+		        </div>
+
+		        <div id="gbcs-QuestionsView" class="QuestionsView is-hidden">
+		            <h2 class="h1">You</h2>
+		            <%= include('questionsview-economic.inc') %>
+		            <%= include('questionsview-social.inc') %>
+		            <%= include('questionsview-cultural.inc') %>
+		        </div>
+
+		        <div id="gbcs-ResultsView" class="ResultsView is-hidden" tabindex="-1">
+		            <div id="gbcs-ResultsView-user" class="ResultsView-user ResultsView-item is-active">
+		                <h2 class="h1">You</h2>
+		                <h3 class="h3"><em>Result:</em> the class group you most closely match is:</h3>
+		                <%= include('resultsview-summaries.inc') %>
+		                 <div class="ResetOption">
+		                    <button class="reset">Reset</button>
+		                </div>
+		                <div id="share_class_result">
+		                    <!-- personalised share buttons added via javscript -->
+		                </div>
+		               
+		            </div>
+		            <%= include('resultsview-archetypes.inc') %>
+		        </div>
+
+		        <%= include('capitalsview.inc') %>
+
+		        <%= include('characternavview.inc') %>
+
+		    </div>
+
+		</div>
+    </div>
+
+<%= include('includes/bottom.tmpl') %>

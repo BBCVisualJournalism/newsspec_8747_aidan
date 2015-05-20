@@ -1,0 +1,1 @@
+This class group scores low for economic, social and cultural factors, but they do have some financial security. According to the Great British Class Survey results, lots of people in this group:

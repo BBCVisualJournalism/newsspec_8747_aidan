@@ -1,0 +1,1 @@
+This is the poorest and most deprived class group. According to the Great British Class Survey results, lots of people in this group:

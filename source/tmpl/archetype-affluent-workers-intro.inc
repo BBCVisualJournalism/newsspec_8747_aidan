@@ -1,0 +1,1 @@
+This class group is sociable, has lots of cultural interests and sits in the middle of all the groups in terms of wealth:

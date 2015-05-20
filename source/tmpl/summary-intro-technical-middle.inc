@@ -1,0 +1,1 @@
+This is a small, distinctive and prosperous new class group. According to the Great British Class Survey results, lots of people in this group:

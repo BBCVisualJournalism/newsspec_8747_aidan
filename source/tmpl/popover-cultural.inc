@@ -1,0 +1,1 @@
+The first blue wedge shows your emerging cultural capital score and the second shows your ‘highbrow’ cultural capital score. Emerging cultural activities include playing sport and going to gigs. Highbrow cultural activities include listening to classical music and going to the theatre.

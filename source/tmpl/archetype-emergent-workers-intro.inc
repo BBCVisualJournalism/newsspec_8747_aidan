@@ -1,0 +1,1 @@
+This class group is financially insecure. It scores low for savings and house value, but high for social and cultural factors:

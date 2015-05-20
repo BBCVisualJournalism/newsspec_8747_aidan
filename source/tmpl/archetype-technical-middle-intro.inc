@@ -1,0 +1,1 @@
+This is a small, distinctive and prosperous new class group:

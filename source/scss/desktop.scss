@@ -1,0 +1,1085 @@
+$grid-full: 976px;
+$grid-left: 468px;
+$grid-right: 468px;
+
+$page-full-height: 558px;
+// Full height minus height of ProgressView
+$page-body-height: $page-full-height - (45px + 22px);
+
+.desktop {
+
+    #gbcs-NoJs{
+        display:none;
+    }
+
+    #share_class_result {
+        float: right;
+        width: 100%;
+        margin-top: 16px;
+
+        .bbc-st-full {
+            background-color: $colour-bg;
+            padding: 0;
+            float: left;
+            width: 100%;
+
+       
+        
+            .bbc-st-count{
+                display:none;
+            }
+        }
+
+        .bbc-st-buttons{
+           clear:none!important; 
+           padding-left: 8px;
+        }
+
+        .bbc-st-heading{
+            padding-top: 8px!important;
+        }
+
+    }
+
+    position: relative;
+    min-height: $page-full-height;
+    background: $colour-bg;
+
+    svg {
+        display: block;
+    }
+
+    form {
+        // Override styles from surrounding page
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        border-top: 0;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    form fieldset {
+        // Override styles from surrounding page
+        float: none;
+        overflow: visible;
+    }
+
+    .h1 {
+        font-size: font-size(32);
+        line-height: (34 / 32);
+    }
+
+    .h2 {
+        font-size: font-size(18);
+        font-weight: bold;
+        line-height: (18 / 18);
+    }
+
+    .SplashView {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+
+    // .SplashView-nav {
+    //     position: absolute;
+    //     left: 0;
+    //     top: 400px;
+    //     width: $grid-left;
+    //     text-align: center;
+
+    //     a {
+    //         display: inline-block;
+    //         padding: 0 8px;
+    //         font-size: font-size(27);
+    //         font-weight: bold;
+    //         line-height: (38 / 27);
+    //         background: $colour-ui-default;
+    //         color: #ffffff;
+
+    //         &:focus,
+    //         &:hover {
+    //             text-decoration: none;
+    //             background: $colour-ui-hover;
+    //         }
+
+    //         &:active {
+    //             background: $colour-ui-active;
+    //         }
+    //     }
+    // }
+
+    .SplashView-body {
+        position: absolute;
+        right: 20px;
+        top: 120px;
+        width: $grid-right;
+
+        p {
+            font-size: font-size(16);
+            line-height: 1;
+        }
+
+        a {
+            display: inline-block;
+            padding: 0 8px;
+            font-size: font-size(27);
+            font-weight: bold;
+            line-height: (38 / 27);
+            background: $colour-ui-default;
+            color: #ffffff;
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                background: $colour-ui-hover;
+            }
+
+            &:active {
+                background: $colour-ui-active;
+            }
+        }
+    }
+
+    .SplashView-characters {
+        // overflow: hidden;
+        // margin: 142px 0 0 0;
+        position: absolute;
+        left: 0;
+        top: 260px;
+        margin: 0 0 0 -19px;
+
+        i {
+            float: left;
+            margin: 0 0 0 19px;
+        }
+    }
+
+    .ProgressView {
+        position: relative;
+        // padding: 2px 0 0 0;
+        margin: 0 0 22px 0;
+        z-index: 0;
+
+        &.is-hidden {
+            display: block;
+            visibility: hidden;
+        }
+
+        ol {
+            overflow: hidden;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #eeeeee;
+        }
+
+        li {
+            position: relative;
+            float: left;
+            width: ($grid-full / 4) - 2px;
+            margin: 0;
+            border-right: 2px solid $colour-bg;
+            font-size: font-size(18);
+            font-weight: bold;
+            // Colours cannot be inherited as surrounding page sets on star selector
+            // color: #ffffff;
+            background: #cccccc;
+        }
+
+        li.last-child {
+            width: (976px / 4);
+            border-right: 0;
+        }
+
+        // CSS triangles
+        li:before,
+        li:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            height: 0;
+            width: 0;
+            margin: -40px 0 0 0;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 40px solid transparent;
+        }
+
+        li:before {
+            right: (-24px);
+            border-left-color: $colour-bg;
+            z-index: 1;
+        }
+
+        li:after {
+            right: (-24px + 3px);
+            border-left-color: #cccccc;
+            z-index: 2;
+        }
+
+        li.last-child {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+
+        span {
+            position: relative;
+            display: block;
+            line-height: (44 / 18);
+            text-align: center;
+            color: #ffffff;
+            // Ensure text is on top of triangles
+            z-index: 3;
+        }
+
+        i {
+            position: relative;
+            top: -1px;
+            display: inline-block;
+            margin: 0 0 0 10px;
+            vertical-align: middle;
+        }
+    }
+
+    #ProgressView-economic {
+        // IE8: Decrementing z-index fixes overlapping
+        z-index: 4;
+
+        &.is-active {
+            background: $colour-key-economic;
+
+            &:after {
+                border-left-color: $colour-key-economic;
+            }
+        }
+    }
+
+    #ProgressView-social {
+        z-index: 3;
+
+        &.is-active {
+            background: $colour-key-social;
+
+            &:after {
+                border-left-color: $colour-key-social;
+            }
+        }
+    }
+
+    #ProgressView-cultural {
+        z-index: 2;
+
+        &.is-active {
+            background: $colour-key-cultural;
+
+            &:after {
+                border-left-color: $colour-key-cultural;
+            }
+        }
+    }
+
+    #ProgressView-result {
+        z-index: 1;
+
+        &.is-active {
+            background: $colour-key-result;
+
+            &:after {
+                border-left-color: $colour-key-result;
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .CharacterView {
+        position: relative;
+        float: left;
+        width: $grid-left;
+        margin: 5px 0 0 0;
+        z-index: 0;
+
+        .canvas {
+            width: $grid-left;
+            height: $grid-left;
+        }
+    }
+    
+    .CharacterView-character {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 125px;
+        height: 218px;
+        margin: round(218px / -4) 0 0 round(125px / -2);
+    }
+
+    .CapitalsView {
+        position: absolute;
+        left: 0;
+        top: 25px;
+        width: $grid-left;
+        // On top of QuestionsView
+        z-index: 1;
+
+        h2 {
+            @include visuallyhidden;
+        }
+    }
+
+    .CapitalsView-help {
+        position: absolute;
+        left: 0;
+        top: 388px;
+        width: 100%;
+        font-size: font-size(13);
+        text-align: center;
+        color: #505050;
+    }
+
+    .CapitalsView-button {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
+        margin: -16px 0 0 -16px;
+        background: transparent;
+
+        a {
+            display: block;
+            width: 33px;
+            height: 33px;
+            text-indent: -9999px;
+            overflow: hidden;
+            background: $colour-ui-hover;
+
+            -webkit-border-radius: 9999px;
+            border-radius: 9999px;
+
+            &:focus,
+            &:hover {
+                background: $colour-ui-default;
+            }
+        }
+
+        i {
+            position: absolute;
+            left: round(33px / 2);
+            top: round(33px / 2);
+
+            &.sprite-icon-economic {
+                margin: round(19px / -2) 0 0 round(13px / -2);
+            }
+
+            &.sprite-icon-social {
+                margin: round(20px / -2) 0 0 round(18px / -2);
+            }
+
+            &.sprite-icon-cultural {
+                margin: round(16px / -2) 0 0 round(20px / -2);
+            }
+        }
+    }
+
+    // FIXME: Use IDs instead of classes
+    .CapitalsView-button-economic {
+        left: 25px;
+        top: 170px;
+    }
+
+    .CapitalsView-button-social {
+        // FIXME: Use absolute value?
+        left: 50%;
+        top: 0;
+    }
+
+    .CapitalsView-button-cultural {
+        // FIXME: Use absolute left value?
+        left: auto;
+        right: 9px;
+        top: 170px;
+    }
+
+    .CapitalsView-popover {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 260px;
+        padding: 7px (16px + 4px + 8px) 7px 8px;
+        margin: 0 0 0 (16px + 16px + 8px);
+        border: 2px solid #505050;
+        background: #ffffff;
+
+        -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, .2);
+        box-shadow: 1px 2px 2px rgba(0, 0, 0, .2);
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Shadow(Color=#26000000, OffX=2, OffY=2, Positive=1)';
+        filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#26000000, OffX=2, OffY=2, Positive=1);
+
+        &.is-active {
+            display: block;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+        // CSS triangles
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            height: 0;
+            width: 0;
+            margin: -16px 0 0 -16px;
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            border-right: 16px solid transparent;
+        }
+
+        &:before {
+            // Needs to be darker than container border to make up for antialiasing
+            border-right-color: #505050;
+        }
+
+        &:after {
+            border-right-color: #ffffff;
+            margin-left: -13px;
+        }
+
+        h3,
+        p {
+            margin: 0;
+            font-size: font-size(13, 14);
+            line-height: (18 / 13);
+            color: #505050;
+        }
+
+        button.close {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            border: 0;
+            text-indent: -9999px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+    }
+
+    #gbcs-CapitalsView-economic {
+        left: 25px;
+        top: 107px;
+    }
+
+    #gbcs-CapitalsView-social {
+        // FIXME: Use absolute value instead?
+        left: 50%;
+        top: -81px;
+    }
+
+    #gbcs-CapitalsView-cultural {
+        left: 441px;
+        top: 89px;
+    }
+
+    .QuestionsView {
+        float: right;
+        width: $grid-right;
+        margin-right: 20px;
+        margin-top: 6px;
+
+        form {
+            // Add spacing for questions nav using padding
+            min-height: $page-body-height - (38px + 20px + 6px);
+            padding-bottom: (38px + 20px);
+        }
+
+        fieldset {
+            display: block;
+            margin: 0 0 52px 0;
+
+            &.last-child,
+            fieldset {
+                margin-bottom: 0;
+            }
+        }
+
+        h2 {
+            position: absolute;
+            left: 24px;
+            top: -6px;
+            line-height: 1;
+            color: $colour-key-result;
+        }
+
+        legend {
+            // Use padding as margin collapses in Safari 
+            // margin: 0 0 12px 0;
+            padding: 0 0 12px 0;
+            margin: 0;
+
+            small {
+                display: block;
+                font-weight: normal;
+                font-size: font-size(13, 18);
+                line-height: (18 / 13);
+            }
+        }
+
+        label {
+            // Override styles from surrounding page
+            float: none;
+            display: block;
+            width: auto;
+            font-size: font-size(16);
+            font-weight: bold;
+        }
+
+        input {
+            width: auto;
+        }
+    }
+
+    .QuestionsView-column {
+        float: left;
+        width: round($grid-right / 2) - 8px;
+        padding: 0 8px 0 0;
+    }
+
+    fieldset[data-ui='checkboxes'] {
+        label {
+            position: relative;
+            padding: 0 0 0 (24px + 10px);
+            margin: 0 0 14px 0;
+            line-height: (24 / 16);
+            cursor: pointer;
+
+            .sprite {
+                @extend .sprite-checkbox;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            &.is-checked .sprite {
+                @extend .sprite-checkbox-checked;
+            }
+
+            // TODO: Focus style
+            &.is-focused {
+                background: #ffffff;
+            }
+        }
+
+        input {
+            @include visuallyhidden;
+        }
+    }
+
+    // fieldset[data-ui='toggle'] {
+    //     margin-bottom: 12px !important;
+    //     overflow: hidden;
+
+    //     label {
+    //         float: left;
+    //         // Override clear and width from surrounding page
+    //         clear: none;
+    //         width: auto;
+    //         padding: 0 8px;
+    //         font-weight: normal;
+    //         line-height: (24 / 16);
+    //         background: $colour-ui-default;
+    //         color: #ffffff;
+    //         cursor: pointer;
+
+    //         &:hover,
+    //         &.is-focused {
+    //             background: $colour-ui-hover;
+    //         }
+
+    //         &.is-checked {
+    //             background: $colour-ui-active;
+    //         }
+    //     }
+
+    //     input {
+    //         @include visuallyhidden;
+    //     }
+    // }
+
+    fieldset[data-ui='radios'] {
+        overflow: hidden;
+
+        label {
+            float: left;
+            clear: none;
+            padding: 0 0 0 (16px + 6px);
+            margin: 0 0 0 10px;
+            font-weight: normal;
+            font-size: font-size(13);
+            cursor: pointer;
+
+            &.first-child {
+                margin-left: 0;
+            }
+
+            .sprite {
+                @extend .sprite-radio;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            &.is-checked .sprite {
+                @extend .sprite-radio-checked;
+            }
+
+            &.is-focused {
+                background: #ffffff;
+            }
+        }
+
+        &.is-disabled {
+            label {
+                cursor: default;
+                // FIXME: Don't use opacity!
+                opacity: 0.3;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+                filter: alpha(opacity=30);
+
+                input {
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+                    filter: alpha(opacity=30);
+                }
+            }
+        }
+
+        input {
+            @include visuallyhidden;
+        }
+    }
+
+    // fieldset[data-ui='slider'] {
+    //     label {
+    //         @include visuallyhidden;
+    //     }
+    // }
+
+    // FIXME: Height/padding
+    // .ui-slider {
+    //     padding: 20px 0;
+    //     // margin: 0 0 0 ceil(33px / 2);
+
+    //     > div {
+    //         float: left;
+    //     }
+    // }
+
+    // .ui-slider-control {
+    //     position: relative;
+    //     height: 50px;
+    //     width: 400px;
+    //     margin: 0 25px 0 0;
+    //     z-index: 0;
+    // }
+
+    // .ui-slider-handle {
+    //     position: absolute;
+    //     height: 24px;
+    //     width: 33px;
+    //     margin: 0 0 0 ceil(33px / -2);
+    //     background: $colour-ui-default;
+    //     cursor: pointer;
+    //     z-index: 1;
+
+    //     i {
+    //         position: absolute;
+    //         left: round(33px / 2);
+    //         top: 0;
+    //         margin: 0 0 0 round(25px / -2);
+    //     }
+    // }
+
+    // .ui-slider-handle:hover,
+    // .is-focused .ui-slider-handle {
+    //     background: $colour-ui-hover;
+    // }
+
+    // .is-disabled .ui-slider-handle {
+    //     background: $colour-ui-disabled;
+    //     cursor: default;
+
+    //     &:hover {
+    //         background: $colour-ui-disabled;
+    //     }
+    // }
+
+    // .ui-slider-track {
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     height: 24px;
+    //     background: #cccccc;
+    // }
+
+    // .ui-slider-track-tick {
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+
+    //     i {
+    //         position: absolute;
+    //         left: 0;
+    //         top: 0;
+    //         height: (24px + 10px);
+    //         border-left: 1px solid $colour-ui-default;
+    //     }
+
+    //     span {
+    //         position: absolute;
+    //         left: round(74px / -2);
+    //         top: (24px + 10px + 8px);
+    //         min-width: 74px;
+    //         font-size: font-size(12);
+    //         text-align: center;
+    //     }
+
+    //     &:first-child span {
+    //         // left: round(33px / -2);
+    //         left: 0;
+    //         text-align: left;
+    //     }
+    // }
+
+    // .ui-slider-label {
+    //     font-size: 26px;
+    //     font-weight: bold;
+    //     line-height: 50px;
+    // }
+
+    // FIXME: Use an ID instead?
+    .economic-property {
+        border-top: 1px solid #cccccc;
+        padding-top: 8px;
+        margin-top: 8px !important;
+    }
+
+    .QuestionsView-nav {
+        position: absolute;
+        right: -20px;
+        bottom: 20px;
+
+        button {
+            position: relative;
+            float: right;
+            padding: 0 (30px + 8px) 0 8px;
+            margin: 0 0 0 2px;
+            font-size: font-size(27);
+            font-weight: bold;
+            line-height: (38 / 27);
+            background: $colour-ui-default;
+            color: #ffffff;
+            text-transform: uppercase;
+
+            &:focus,
+            &:hover {
+                background: $colour-ui-hover;
+                outline: 0;
+            }
+
+            &:active {
+                background: $colour-ui-active;
+            }
+
+            &[disabled] {
+                background: $colour-ui-disabled;
+                cursor: default;
+
+                &:focus,
+                &:hover {
+                    background: $colour-ui-disabled;
+                }
+            }
+        }
+
+        .prev {
+            float: left;
+            padding: 0;
+            min-width: 38px;
+            overflow: hidden;
+            text-indent: -9999px;
+        }
+
+        .sprite {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            margin: -10px 0 0 0;
+        }
+
+        .prev .sprite {
+            right: auto;
+            left: 50%;
+            margin-left: -8px;
+        }
+    }
+
+    .ResultsView {
+        float: right;
+        width: $grid-right;
+        margin-right: 20px;
+        margin-top: 8px;
+
+        &:focus {
+            outline: 0;
+        }
+
+        h2.h2 {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .ResultsView-item {
+        display: none;
+        font-size: 1em;
+        background: transparent;
+
+        &:focus {
+            outline: 0;
+        }
+
+        // FIXME: Be consistent use 'is-hidden' instead?
+        &.is-active {
+            display: block;
+        }
+
+        p {
+            font-size: font-size(16);
+            font-weight: bold;
+        }
+
+        .h1 {
+            margin-bottom: 18px;
+            font-size: font-size(32);
+            font-weight: bold;
+            line-height: 1;
+            color: $colour-archetype;
+            
+        }
+
+        li {
+            font-size: font-size(14);
+        }
+    }
+
+    .ResultsView-item-stats {
+        overflow: hidden;
+        margin: 0 0 18px 0;
+
+        p {
+            float: left;
+            clear: none;
+            margin: 0 52px 0 0;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    .ResultsView-item-stats-title {
+        font-size: font-size(13, 16);
+        font-weight: normal;
+        margin: 0 0 4px 0;
+    }
+
+    .ResultsView-item-stats-value {
+        font-size: font-size(60, 16);
+        line-height: 1;
+        color: $colour-archetype;
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .ResultsView-user {
+        h2.h1 {
+            position: absolute;
+            left: 24px;
+            top: -6px;
+        }
+
+        .h1 {
+            color: $colour-key-result;
+        }
+
+        .h3 {
+            font-size: font-size(16);
+            font-weight: normal;
+
+            em {
+                font-style: normal;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .ResultsView-summary {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+    }
+
+    .ResultsView-archetypes {
+        > ul {
+            list-style: none;
+            margin: 0;
+
+            > li {
+                padding: 0;
+                margin: 0;
+                background: transparent;
+            }
+        }
+    }
+    .ResetOption{
+
+        float:left;
+
+        button {
+            position: relative;
+            float: right;
+            padding: 0 10px 0 10px;
+            margin: 0 0 0 2px;
+            font-size: 1.25em;
+            line-height: 1.6;
+            background: $colour-ui-default;
+            color: #ffffff;
+            border:none;
+            cursor: pointer;
+
+            &:focus,
+            &:hover {
+                background: $colour-ui-hover;
+                outline: 0;
+            }
+
+            &:active {
+                background: $colour-ui-active;
+            }
+
+            &[disabled] {
+                background: $colour-ui-disabled;
+                cursor: default;
+
+                &:focus,
+                &:hover {
+                    background: $colour-ui-disabled;
+                }
+            }
+        }
+    }
+
+    .CharacterNavView {
+        position: relative;
+        clear: both;
+        float: left;
+        width: 100%;
+        margin: -30px 0 0 0;
+        // On top of character view
+        z-index: 1;
+
+        ul {
+            list-style: none;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        li {
+            float: left;
+            width: (($grid-full - 2px) / 8) - 2px;
+            padding: 0;
+            margin: 0 0 0 -2px;
+            border: 2px solid $colour-bg;
+            background: transparent;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &.is-active {
+                position: relative;
+                // border-color: #d1700e;
+                border-color: $colour-ui-active;
+                // Place on top of subsequent items
+                z-index: 1;
+            }
+        }
+
+        a {
+            position: relative;
+            display: block;
+            padding: (100px - 24px) 0 0 0;
+            background-color: #dddddd;
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        i {
+            position: absolute;
+            left: 50%;
+            top: 4px;
+            margin: 0 0 0 round(94px / -2);
+        }
+
+        span {
+            display: block;
+            min-height: (16 / 14) * 2em;
+            padding: 4px 8px;
+            font-weight: normal;
+            line-height: (16 / 14);
+            text-align: center;
+            // FIXME: This should be removed
+            background-color: $colour-ui-default;
+            color: #ffffff;
+        }
+
+        a:focus,
+        a:hover {
+            span {
+                background-color: $colour-ui-hover;
+            }
+        }
+
+        a:active {
+            span {
+                background: $colour-ui-active;
+            }
+        }
+    }
+
+    .CharacterNavView-nav {
+        display: none;
+    }
+}

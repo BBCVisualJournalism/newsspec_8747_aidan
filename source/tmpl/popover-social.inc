@@ -1,0 +1,1 @@
+The pink wedges show your social ‘capital’ score, based on the professions of the people you know socially. The first wedge indicates the average social status of the people you socialise with, while the second shows the number of different occupations within your social group.

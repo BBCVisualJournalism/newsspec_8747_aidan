@@ -1,0 +1,30 @@
+// $colour-bg: #f7f7ef;
+$colour-bg: #eaeae4;
+
+$colour-ui-default: #656565;
+$colour-ui-disabled: #cbcac8;
+$colour-ui-active: #cc6600;
+$colour-ui-hover: #000000;
+
+$colour-key-economic: #4d3361;
+$colour-key-social: #fa315d;
+$colour-key-cultural: #1bb4c7;
+$colour-key-result: #f74f06;
+
+$colour-archetype: #1f74a3;
+
+@function font-size($size, $base-size: 13) {
+    // Surrounding page base font size is 13px
+    @return ($size / $base-size) * 1em;
+}
+
+@mixin visuallyhidden() {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

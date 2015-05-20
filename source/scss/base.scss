@@ -1,0 +1,69 @@
+// Global styles here that apply to both desktop and mobile
+// FIXME: Should these styles be scoped?
+
+#newsspec_5093{
+  margin-bottom:16px;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.visuallyhidden {
+    @include visuallyhidden;
+}
+
+.no-js{
+
+	.SplashView{
+		display:none;
+	}
+
+	.container{
+
+		.CharacterView{
+			display:none;
+		}
+
+		.ResultsView{
+			display:block;
+
+			h2.h1,
+			h3.h3{
+				display:none;
+			}
+
+			h3.h1{
+				font-size: 1.6em;
+			}
+
+			.ResultsView-summaries{
+				display:none;
+			}
+		}
+		.ResetOption{
+			display:none;
+		}
+
+	}
+} 
