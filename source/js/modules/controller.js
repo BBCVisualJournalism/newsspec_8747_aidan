@@ -1,6 +1,5 @@
-define(['js/pubsub'],
-function(pubsub
-    ) {
+define(['jquery'],
+function(pubsub) {
 
     return {
         init: function(userModel, splashView, progressView, characterView, capitalsView, questionsView, resultsView, characterNavView) {
@@ -17,7 +16,7 @@ function(pubsub
         inputChanged: function() {
             // iStats - Users has interacted with form
             // - FIXME: Needs to be triggered max once
-            pubsub.emitEvent('start-interaction');
+            pubsub.emit('start-interaction');
         },
 
         setUserProperty: function(property, value, silent) {
@@ -53,8 +52,8 @@ function(pubsub
         showResults: function() {
             // iStats - Users has completed questions
             // - FIXME: Needs to be triggered max once
-            pubsub.emitEvent('get-result');
-            pubsub.emitEvent('personal-share',[this.getUserArchetype()]);
+            pubsub.emit('get-result');
+            pubsub.emit('personal-share',[this.getUserArchetype()]);
             this.questionsView.hide();
             this.resultsView.show();
             this.characterNavView.show();
@@ -77,7 +76,7 @@ function(pubsub
             } else {
                 // iStats - Users has viewed another class
                 // - FIXME: Needs to be triggered max once
-                pubsub.emitEvent('explore-archetypes');
+                pubsub.emit('explore-archetypes');
                 this.characterView.showArchetype(id);
                 this.progressView.clear();
                 this.capitalsView.hideHelp();

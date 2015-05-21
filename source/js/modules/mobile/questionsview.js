@@ -3,7 +3,6 @@ define(
 function(bootstrap, controller, formHelper) {
 
     var $ = bootstrap.$,
-        bean = bootstrap.bean,
         bind = bootstrap.bind,
         QuestionsView;
 
@@ -13,14 +12,14 @@ function(bootstrap, controller, formHelper) {
         this.activeFormIndex = 0;
         this.totalForms = $('form', this.$el).length;
 
-        bean.on(this.$el[0], 'click', 'button.prev', bind(this, 'onClickPrev'));
+        this.$el.find('button.prev').on('click', bind(this, 'onClickPrev'));
 
-        bean.on($('fieldset.economic-propertytype', this.$el)[0], 'change', bind(this, 'onChangePropertyType'));
+        this.$el.find('fieldset.economic-propertytype').on('change', bind(this, 'onChangePropertyType'));
 
         // FIXME: Don't really need to listen for change events
         // - as on mobile the character view is not alongside questions
-        bean.on(this.$el[0], 'change', bind(this, 'onChange'));
-        bean.on(this.$el[0], 'submit', bind(this, 'onSubmit'));
+        this.$el.on('change', bind(this, 'onChange'));
+        this.$el.on('submit', bind(this, 'onSubmit'));
     };
 
     QuestionsView.prototype.onChangePropertyType = function(e) {
@@ -65,7 +64,7 @@ function(bootstrap, controller, formHelper) {
         $targetForm = $($('form', this.$el)[n]);
 
         $targetForm.removeClass('is-hidden');
-        bean.fire($targetForm, 'focus');
+        $targetForm.focus();
 
         // TODO: Need to gather initial state from inputs?
         this.getFormData($targetForm);

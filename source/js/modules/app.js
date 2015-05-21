@@ -1,9 +1,7 @@
 define(
 ['js/controller', 'js/usermodel', 'js/splashview', 'js/progressview', 'js/characterview', 'js/capitalsview', 'js/questionsview', 'js/resultsview', 'js/characternavview','js/pubsub','js/tracking','js/share'],
 function(controller, UserModel, SplashView, ProgressView, CharacterView, CapitalsView, QuestionsView, ResultsView, CharacterNavView,pubsub,tracker,share) {
-
-    console.log('got here');
-
+    
     return {
         init: function() {
             controller.init(

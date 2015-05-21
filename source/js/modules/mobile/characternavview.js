@@ -3,7 +3,6 @@ define(
 function(bootstrap, controller) {
 
     var $ = bootstrap.$,
-        bean = bootstrap.bean,
         bind = bootstrap.bind,
         CharacterNavView;
 
@@ -20,7 +19,8 @@ function(bootstrap, controller) {
 
         this.activeCharacterIndex = 0;
 
-        bean.on(this.$el[0], 'click', 'button', bind(this, 'onClick'));
+        this.$el.find('button').on('click', bind(this, 'onClick'));
+
     };
 
     CharacterNavView.prototype.onClick = function(e) {

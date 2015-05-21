@@ -3,7 +3,6 @@ define(
 function(bootstrap, controller) {
 
     var $ = bootstrap.$,
-        bean = bootstrap.bean,
         bind = bootstrap.bind,
         ProgressView;
 
@@ -18,7 +17,7 @@ function(bootstrap, controller) {
 
         this.$el.removeClass('is-hidden');
 
-        bean.on(this.$el[0], 'click', 'button', bind(this, 'onClick'));
+        this.$el.find('button').on('click', bind(this, 'onClick'));
     };
 
     ProgressView.prototype.show = function() {

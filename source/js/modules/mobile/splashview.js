@@ -3,13 +3,12 @@ define(
 function(bootstrap, controller) {
 
     var $ = bootstrap.$,
-        bean = bootstrap.bean,
         bind = bootstrap.bind,
         SplashView;
 
     SplashView = function(el) {
         this.$el = $(el);
-        bean.on(this.$el[0], 'click', 'a', bind(this, 'onClick'));
+        this.$el.find('a').on('click', bind(this, 'onClick'));
     };
 
     SplashView.prototype.onClick = function(e) {

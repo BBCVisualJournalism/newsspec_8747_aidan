@@ -19,7 +19,6 @@ if (scaffoldLite) {
         if (browserType) {
             var iframeUID = '<%= iframeUid %>',
                 debugMode = setDebugMode(),
-                settings  = getSettings(browserType, debugMode),
                 done      = false,
                 script    = document.createElement('script');
 
@@ -34,11 +33,13 @@ if (scaffoldLite) {
                     script.type = "text/javascript";
                     script.onload = script.onreadystatechange = function() {
                         if ( !done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") ) {
+                            var settings = getSettings(browserType, debugMode);
+
                             done = true;
                             define('appInitData', parsedData);
                             require.config(settings.requireConfig);
                             require([settings.moduleToStartApp], function () {
-                                require(['app'], function (app) {});
+                                require(['app' + settings.mobileString], function (app) {});
                             });
                         }
                     }
@@ -81,7 +82,9 @@ if (scaffoldLite) {
                     urlArgs: "v=<%= version %>",
                     baseUrl: "<%= pathStatic %>/<%= vocab_dir %>/js/"
                 },
-                moduleToStartApp = '<%= pathStatic %>/<%= vocab_dir %>/js/all-'+browserType+'.js';
+                viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+                mobileString = (viewportWidth < 660) ? '-mobile' : '',
+                moduleToStartApp = '<%= pathStatic %>/<%= vocab_dir %>/js/all-'+ browserType + mobileString + '.js';
 
             if (debug) {
                 var jqueryVersion   = (browserType === 'html5') ? 'jquery-2.0.3' : 'jquery-1.9.1';
@@ -92,7 +95,8 @@ if (scaffoldLite) {
             }
             return {
                 requireConfig: config,
-                moduleToStartApp: moduleToStartApp
+                moduleToStartApp: moduleToStartApp,
+                mobileString: mobileString
             };
         }
     </script>

@@ -182,7 +182,7 @@ $page-body-height: $page-full-height - (45px + 22px);
         li {
             position: relative;
             float: left;
-            width: ($grid-full / 4) - 2px;
+            width: 25%;
             margin: 0;
             border-right: 2px solid $colour-bg;
             font-size: font-size(18);
@@ -193,7 +193,7 @@ $page-body-height: $page-full-height - (45px + 22px);
         }
 
         li.last-child {
-            width: (976px / 4);
+            width: 25%;
             border-right: 0;
         }
 

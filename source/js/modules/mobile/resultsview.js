@@ -3,19 +3,18 @@ define(
 function(bootstrap, controller, archetypesData) {
 
     var $ = bootstrap.$,
-        bean = bootstrap.bean,
         bind = bootstrap.bind,
         ResultsView;
 
     ResultsView = function(el) {
         this.$el = $(el);
-        bean.on(this.$el[0], 'click', 'button.share', bind(this, 'onClickShare'));
+        this.$el.find('button.share').on('click', bind(this, 'onClickShare'));
     };
 
     ResultsView.prototype.show = function() {
         this.renderResults();
         this.$el.removeClass('is-hidden');
-        bean.fire(this.$el[0], 'focus');
+        this.$el.focus();
     };
 
     ResultsView.prototype.hide = function() {
@@ -35,7 +34,7 @@ function(bootstrap, controller, archetypesData) {
 
         $target = $('#gbcs-ResultsView-' + id);
         $target.addClass('is-active');
-        bean.fire($target[0], 'focus');
+        $target.focus();
     };
 
     ResultsView.prototype.onClickShare = function() {

@@ -22,7 +22,7 @@ module.exports = function (grunt) {
         grunt.task.run('uglify');
     });
 
-    var applicationJS = ['requirejs:jquery1', 'requirejs:jquery2'];
+    var applicationJS = ['requirejs:jquery1', 'requirejs:jquery2', 'requirejs:jquery1-mobile', 'requirejs:jquery2-mobile'];
     if (grunt.config.get('config').scaffoldLite === 'true') {
         applicationJS = ['requirejs:lite'];
     }
@@ -30,5 +30,5 @@ module.exports = function (grunt) {
     grunt.config(['concurrent', 'js'], {
         tasks: ['jshint'].concat(applicationJS)
     });
-    grunt.registerTask('js', ['clean:allJs', 'overrideImagerImageSizes', 'requirejs:lite', 'concurrent:js', 'copyRequiredJs']);
+    grunt.registerTask('js', ['clean:allJs', 'overrideImagerImageSizes', 'concurrent:js', 'copyRequiredJs']);
 };

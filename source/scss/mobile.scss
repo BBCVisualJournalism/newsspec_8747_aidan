@@ -1,10 +1,7 @@
 .mobile {
     display: none;
     background: $colour-bg;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
+    width: 100%;
     min-height: 100%;
     z-index: 10;
 
@@ -247,7 +244,7 @@
         label {
             float: left;
             clear: both;
-            margin: 0 0 8px 0;
+            margin: 0 0 8px 5px;
             font-size: font-size(16, 14);
 
             input {
@@ -522,6 +519,10 @@
     .ResultsHeaderView-title-user {
         color: $colour-key-result;
     }
+
+    .ProgressView span{
+        color: #fff;
+    }
 }
 
 // Mobile launch element
@@ -545,6 +546,7 @@
         cursor: pointer;
 
         span {
+            color: #fff;
             display: block;
             padding: 8px 8px 8px 8px;
             margin: 0 0 0 (34px + 8px + 8px + 1px);
@@ -557,8 +559,8 @@
             position: absolute;
             left: 0;
             top: 0;
-            width: 34px;
-            height: 34px;
+            width: 51px;
+            height: 50px;
             padding: 8px;
             background: rgba(0, 0, 0, 0.7) url('../img/launch-icon.png') no-repeat 8px 8px;
         }
